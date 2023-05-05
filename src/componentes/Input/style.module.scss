@@ -1,0 +1,22 @@
+.containerInput{
+    // display: flex;
+    width: 40%;
+    padding: 10px 16px;
+    // background-color: aqua;
+    input, textarea{
+        margin-top: 10px;
+        display: block;
+        border:none;    
+        width: 70%;
+        padding: 16px 16px;
+        border-radius: 20px;
+        resize:none;
+        outline:none;
+
+        &::placeholder{
+            font-size: 15px;
+            font-weight: 300;
+        }
+    }
+
+}

@@ -1,0 +1,105 @@
+@use "./../../../styles/variaveis.scss";
+
+%styleTitle {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 15px;
+}
+
+%styleStrong {
+    font-weight: 275;
+    margin-bottom: 10px;
+}
+
+%hrLine {
+    height: 2px;
+    width: 10%;
+    display: inline-block;
+    font-weight: 275;
+    margin-bottom: 10px;
+}
+
+%styleH1 {
+    width: 82%;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+%sytleP{
+    font-size: 20px;
+        font-weight: 275;
+}
+
+
+
+
+.backgroundColorBlue {
+    background-color: variaveis.$color-azul;
+    color: variaveis.$color-branco;
+    padding: 5rem;
+
+    .title {
+
+        @extend %styleTitle;
+
+        strong {
+            @extend %styleStrong;
+        }
+
+        .hrLine {
+            @extend %hrLine;
+            background-color: variaveis.$color-branco ;
+        }
+    }
+
+    h1 {
+        @extend %styleH1;
+    }
+
+    p {
+        font-size: 20px;
+        font-weight: 275;
+
+    }
+
+    button {
+        margin-top: 15px;
+        color: variaveis.$color-branco;
+        border: solid 1px variaveis.$color-branco;
+    }
+}
+
+.backgroundColorWhite {
+    background-color: variaveis.$color-branco;
+    color: variaveis.$color-azul;
+    padding: 5rem;
+
+    .title {
+        @extend %styleTitle;
+
+        strong {
+            font-weight: 275;
+            margin-bottom: 10px;
+        }
+
+        .hrLine {
+            @extend %hrLine;
+            background-color: variaveis.$color-azul ;
+        }
+    }
+
+    h1 {
+        @extend %styleH1;
+    }
+
+    p {
+        @extend %sytleP;
+    }
+
+    button {
+        margin-top: 15px;
+        color: variaveis.$color-azul;
+        border: solid 1px variaveis.$color-azul;
+    }
+}

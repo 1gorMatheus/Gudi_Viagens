@@ -1,0 +1,33 @@
+@use "../../styles/variaveis.scss";
+@use "../../styles/mixins.scss";
+header {
+    .headerSection {
+        @include mixins.espaco;
+
+        .headerLogo{
+            @include mixins.espacamentoLogo(1rem);
+        }
+
+
+        nav {
+            width: 40%;
+            margin-right: 2rem;
+            ul{
+                display: flex;
+                list-style: none;
+                justify-content: space-around;
+                align-items: center;
+                a{
+                    text-decoration: none;
+                    color: variaveis.$color-azul
+                }
+                button:last-child{
+                    background-color:variaveis.$color-azul;
+                    padding: 1rem 2rem;
+                    cursor: pointer;
+                    color:variaveis.$color-branco;
+                }
+            }
+        }
+    }
+}

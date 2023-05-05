@@ -1,0 +1,30 @@
+@use "../../styles/variaveis.scss";
+@use "../../styles/mixins.scss";
+
+footer {
+    .footer {
+        @include mixins.espaco;
+
+        .footerNavList {
+            width: 40%;
+            margin-left: 1rem;
+            ul {
+                list-style: none;
+                h3{
+                    color: variaveis.$color-azul;
+                    padding-bottom: 1rem;
+                }
+                a {
+                    text-decoration: none;
+                    color: variaveis.$color-azul
+                }
+            }
+
+        }
+
+        .footerLogo {
+            @include mixins.espacamentoLogo(0px);
+            width: 100%;
+        }
+    }
+}
