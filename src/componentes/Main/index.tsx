@@ -7,6 +7,7 @@ import Imagem2 from "./../../assets/img/Caminho 38@2x.png"
 import Imagem3 from "./../../assets/img/Caminho 39@2x.png"
 import Cidades from "./Catalago/Cidades";
 import MuralExp from "./Catalago/MuralExp";
+import FaleConosco from "./FaleConosco";
 
 
 
@@ -39,8 +40,12 @@ function Main() {
         text= "Conheça as fontes termais de Caldas Novas, Goiás . Águas quentes, num clima sereno, relaxante e natural."
         img={Imagem3}
         buttonText = 'A G E N D A R' />
+
         <Cidades/>
+
         <MuralExp/>
+
+        <FaleConosco/>
     </main>
   );
 }
