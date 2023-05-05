@@ -5,7 +5,6 @@ type Props = {
 };
 
 const Button = ({children}: Props) => {
-  console.log(style)
   return <button className={style.botao} >{children}</button>
 };
 
