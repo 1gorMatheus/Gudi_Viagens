@@ -1,6 +1,6 @@
 import React from "react";
 import Input from "../Input";
-import style from "./style.module.scss"
+import style from "./../../styles/componentes/Main/FaleConosco.module.scss"
 import Button from "../Button";
 
 

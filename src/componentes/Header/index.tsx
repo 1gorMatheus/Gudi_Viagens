@@ -1,6 +1,6 @@
 import React from "react";
 import Gudi from '../../assets/img/Gudi.svg'
-import style from './styles.module.scss'
+import style from './../../styles/componentes/Header/styles.module.scss'
 import Button from "../Button";
 
 // type Props = {};

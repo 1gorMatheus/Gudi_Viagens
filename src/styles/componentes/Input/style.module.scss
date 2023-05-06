@@ -1,20 +1,20 @@
+@use "./../../variaveis.scss";
 .containerInput{
-    // display: flex;
     width: 40%;
     padding: 10px 16px;
-    // background-color: aqua;
+
     input, textarea{
-        margin-top: 10px;
+        margin-top: variaveis.$espaco-medioPequeno;
         display: block;
         border:none;    
         width: 70%;
         padding: 16px 16px;
-        border-radius: 20px;
+        border-radius: variaveis.$espaco-grande;
         resize:none;
         outline:none;
 
         &::placeholder{
-            font-size: 15px;
+            font-size: variaveis.$espaco-medio;
             font-weight: 300;
         }
     }

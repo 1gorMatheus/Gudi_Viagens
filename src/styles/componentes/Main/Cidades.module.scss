@@ -1,0 +1,65 @@
+@use "./../../variaveis.scss";
+
+@mixin backgroundImg ($img) {
+    background-image: $img;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 200px 0;
+
+}
+
+%button {
+    margin: 0 auto;
+    display: flex;
+    border: solid 1px variaveis.$color-branco;
+    backdrop-filter: blur(10px);
+    color: variaveis.$color-branco;
+    letter-spacing: 5px;
+    font-weight: 275;
+}
+
+.cidades {
+    width: 100%;
+    display: flex;
+
+    .cidadeRio {
+        @include backgroundImg(variaveis.$cidade-rio);
+        padding: 108px 0px;
+        width: 25%;
+
+        button {
+            @extend %button;
+        }
+    }
+
+    .cidadeRioDasOstras {
+        @include backgroundImg(variaveis.$cidade-rioDasOstras);
+        padding: 108px 0px;
+        width: 25%;
+
+        button {
+            @extend %button;
+        }
+    }
+
+    .cidadeCaldasNovas {
+        @include backgroundImg(variaveis.$cidade-caldaNovas);
+        padding: 108px 0px;
+        width: 25%;
+
+        button {
+            @extend %button;
+        }
+    }
+
+    .cidadeAmazonia {
+        @include backgroundImg(variaveis.$cidade-amazonia);
+        padding: 108px 0px;
+        width: 25%;
+
+        button {
+            @extend %button;
+        }
+    }
+
+}

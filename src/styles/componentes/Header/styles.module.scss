@@ -1,5 +1,5 @@
-@use "../../styles/variaveis.scss";
-@use "../../styles/mixins.scss";
+@use "../../variaveis.scss";
+@use "../../mixins.scss";
 header {
     .headerSection {
         @include mixins.espaco;

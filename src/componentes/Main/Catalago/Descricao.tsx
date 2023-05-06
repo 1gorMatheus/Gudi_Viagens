@@ -1,5 +1,5 @@
 import React from 'react'
-import style from "./descricaoStyle.module.scss";
+import style from "./../../../styles/componentes/Main/descricaoStyle.module.scss";
 import Button from '../../Button';
 
 type Props = {

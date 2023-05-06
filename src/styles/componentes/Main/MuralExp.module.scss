@@ -1,0 +1,73 @@
+@use "./../../variaveis.scss";
+
+.muralDeExp {
+    margin-top: variaveis.$espaco-medioPequeno;
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    color: variaveis.$color-cinza;
+    font-weight: 300;
+
+    .muralTitle {
+        margin: 70px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h1 {
+            font-size: 32px;
+            width: 51%;
+            margin: 0 auto;
+        }
+    }
+
+    .imagens {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 13px;
+
+        img {
+            width: 24%;
+        }
+    }
+
+    .experiencia {
+        margin: 50px 0px;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+
+        %experiencia {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: variaveis.$color-azul;
+            padding: 35px 23px;
+
+            background-color: variaveis.$color-cinzaWhite;
+            width: 19%;
+
+            p {
+                padding: variaveis.$espaco-grande;
+            }
+        }
+
+        .localidade {
+            @extend %experiencia;
+        }
+
+        .montanha {
+            @extend %experiencia;
+        }
+
+        .coco {
+            @extend %experiencia;
+        }
+
+        .restaurante {
+            @extend %experiencia;
+        }
+    }
+}

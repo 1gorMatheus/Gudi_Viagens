@@ -1,4 +1,4 @@
-import style from './style.module.scss';
+import style from './../../styles/componentes/Button/style.module.scss';
 
 type Props = {
     children:string ;

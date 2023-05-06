@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "../../Button";
-import style from "./../style.module.scss"
+import style from "./../../../styles/componentes/Main/Cidades.module.scss"
 
 function Cidades() {
   return <div className={style.cidades}>

@@ -2,7 +2,7 @@ import React from "react";
 
 import Imagens from "./Imagens";
 
-import style from "./../style.module.scss"
+import style from "./../../../styles/componentes/Main/MuralExp.module.scss"
 
 import img1 from "./../../../assets/img/Retângulo 197@2x.png";
 import img2 from "./../../../assets/img/Retângulo 198@2x.png";

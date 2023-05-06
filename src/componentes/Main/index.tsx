@@ -1,5 +1,5 @@
 import Pesquisar from "./Pesquisar";
-import style from "./style.module.scss";
+import style from "./../../styles/componentes/Main/style.module.scss";
 import Catalago from "./Catalago";
 
 import Imagem1 from "./../../assets/img/Caminho 18@2x.png"
@@ -12,7 +12,6 @@ import FaleConosco from "./FaleConosco";
 
 
 function Main() {
-  // console.log(style.mainCatalago)
   return (
     <main>
       <Pesquisar className={style.mainPesquisar} />

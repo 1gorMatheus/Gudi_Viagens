@@ -1,4 +1,4 @@
-import style from './styles.module.scss';
+import style from "./../../styles/componentes/Footer/styles.module.scss";
 import NavFooter from './NavFooter';
 import FooterList from './FooterList';
 import Gudi from '../../assets/img/Gudi.svg'
